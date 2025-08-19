@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #1a1a2e, #16213e);
+      color: #eee;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00d4ff;
+    }
+
+    /* Hero Section */
+    header {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url("hero-bg.jpg") no-repeat center/cover;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #00d4ff;
+    }
+    header p {
+      margin: 15px 0;
+      font-size: 1.2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #00d4ff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #0099cc;
+      color: #fff;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 10%;
+      margin: 40px auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+      color: #00d4ff;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .feature {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      transition: 0.3s;
+      backdrop-filter: blur(15px);
+    }
+    .feature:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .feature h3 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    /* Pricing */
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .price-card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 15px;
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .price-card:hover {
+      transform: scale(1.05);
+    }
+    .price-card h3 {
+      margin-bottom: 10px;
+    }
+    .price-card p {
+      margin: 10px 0;
+    }
+    .price {
+      font-size: 1.8rem;
+      color: #00d4ff;
+      margin: 15px 0;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .testimonial {
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      font-style: italic;
+    }
+    .testimonial h4 {
+      margin-top: 15px;
+      color: #00d4ff;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      background: #00d4ff;
+      color: #000;
+      padding: 60px 20px;
+      border-radius: 15px;
+    }
+    .cta h2 {
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0,0,0,0.8);
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+  <header>
+    <h1>Welcome to our Website</h1>
+    <p>Beautiful, responsive, and modern designs with just HTML & CSS</p>
+    <a href="#features" class="btn">Explore More</a>
+  </header>
+
+  <!-- Features -->
+  <section id="features">
+    <h2>Awesome Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>⚡ Fast</h3>
+        <p>Lightweight and optimized for performance.</p>
+      </div>
+      <div class="feature">
+        <h3>🎨 Creative</h3>
+        <p>Modern layouts and stylish elements.</p>
+      </div>
+      <div class="feature">
+        <h3>📱 Responsive</h3>
+        <p>Looks great on desktops, tablets, and mobiles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <h2>Choose a Plan</h2>
+    <div class="pricing">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <p class="price">$9/month</p>
+        <p>Basic landing page</p>
+        <p>Email Support</p>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+      <div class="price-card">
+        <h3>Pro</h3>
+        <p class="price">$29/month</p>
+        <p>Advanced design</p>
+        <p>24/7 Support</p>
+        <a href="#" class="btn">Get Pro</a>
+      </div>
+      <div class="price-card">
+        <h3>Business</h3>
+        <p class="price">$49/month</p>
+        <p>Custom landing page</p>
+        <p>Dedicated Manager</p>
+        <a href="#" class="btn">Get Business</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"This website helped me learn so much about CSS!"</p>
+        <h4>- Alex</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Clean design and easy to customize. Great for beginners!"</p>
+        <h4>- Priya</h4>
+      </div>
+      <div class="testimonial">
+        <p>"A simple project that looks professional and creative!"</p>
+        <h4>- John</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta" id="contact">
+    <h2>Ready to Start Your Project?</h2>
+    <a href="#" class="btn">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Landing Page | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
